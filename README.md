@@ -1,4 +1,4 @@
-# 🖤 Projeto em JavaScript — Dark Edition
+#  Projeto em JavaScript 
 
 Bem-vindo(a) ao meu projeto desenvolvido em **JavaScript**, com foco em funcionalidade, clareza e um design voltado para o **modo escuro** (tom preto). Este repositório foi pensado para quem aprecia elegância no código e estilo na interface.
 
@@ -14,8 +14,7 @@ Bem-vindo(a) ao meu projeto desenvolvido em **JavaScript**, com foco em funciona
 ## 💡 Objetivo
 Esse projeto foi criado com a intenção de parecer um sistema para uma escola que rode em terminal
 
-## 🖼️ Tema Escuro (Black Theme)
-Todo o visual foi pensado para combinar com um estilo **dark**, elegante e moderno. Ideal para quem trabalha no escuro, literalmente ou não 😎
+
 
 ## 🛠️ Como Executar
 ```bash
