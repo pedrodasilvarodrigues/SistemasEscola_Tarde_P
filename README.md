@@ -1,6 +1,6 @@
 #  Projeto em JavaScript 
 
-Bem-vindo(a) ao meu projeto desenvolvido em **JavaScript**, com foco em funcionalidade, clareza e um design voltado para o **modo escuro** (tom preto). Este repositório foi pensado para quem aprecia elegância no código e estilo na interface.
+Bem-vindo(a) ao meu projeto desenvolvido em **JavaScript**, com foco em funcionalidade, clareza . Este repositório foi pensado para quem aprecia elegância no código e estilo na interface.
 
 ## 📁 Estrutura do Projeto
 - Tudo organizado em pastas bem definidas
