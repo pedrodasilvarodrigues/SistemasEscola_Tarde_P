@@ -1,6 +1,31 @@
 let prompt = require("prompt-sync")();
+
 let alunos = [];
-let curso = [];
+let cursos = [];
+
+let opcao;
+let senhaCorreta = "Senai123";
+let tentativasSenha = 0;
+
+while (tentativasSenha < 3) {
+  let senhaDigitada = prompt("Digite a senha para acessar o sistema: ");
+
+  if (senhaDigitada === senhaCorreta) {
+    console.log("Senha correta! Acesso concedido.");
+    break;
+  } else {
+    tentativasSenha++;
+
+    console.log(
+      "Senha incorreta. Tentativas restantes: " + (3 - tentativasSenha)
+    );
+  }
+}
+
+if (tentativasSenha === 3) {
+  console.log("Acesso não autorizado. Você excedeu o número de tentativas.");
+  process.exit();
+}
 
 do {
   opcao = prompt(
@@ -30,6 +55,7 @@ do {
     case "2":
       let nomeExcluirAluno = prompt("Digite o nome do aluno a ser excluído:");
       let indexAlunoEncontrado = -1;
+
       for (let i = 0; i < alunos.length; i++) {
         if (alunos[i].nome === nomeExcluirAluno) {
           indexAlunoEncontrado = i;
@@ -49,7 +75,7 @@ do {
       let nomeCurso = prompt("Digite o nome do curso:");
 
       if (nomeCurso && nomeCurso.trim() !== "") {
-        curso.push(nomeCurso.trim());
+        cursos.push(nomeCurso.trim());
         console.log("Curso cadastrado com sucesso!");
       } else {
         console.log("Nome inválido.");
@@ -151,5 +177,6 @@ do {
       break;
 
     default:
+      console.log("Opção inválida. Tente novamente.");
   }
 } while (opcao !== "7");
